@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="punct2.css" type="text/css">
+        <link rel="normalize" href="github.com/necolas/normalize.css">
+    </head>
+    <body>
+
+        <form novalidate="novalidate">
+            <div class="container">
+                <h1>Регистрация</h1>
+                <hr>
+
+                <label for="name">
+                    <b>Имя*</b>
+                </label>
+                <input type="text" placeholder="Введите имя" id="name" required="required">
+
+                <label for="lastname">
+                    <b>Фамилия*</b>
+                </label>
+                <input
+                    type="text"
+                    placeholder="Введите фамилию"
+                    id="lastname"
+                    required="required">
+
+                <label for="email">
+                    <b>Email*</b>
+                </label>
+                <input type="text" placeholder="Введите email" id="email" required="required">
+
+                <label for="psw">
+                    <b>Пароль*</b>
+                </label>
+                <input
+                    type="password1"
+                    placeholder="Придумайте пароль"
+                    id="password1"
+                    required="required">
+
+                <label for="psw-repeat">
+                    <b>Повторите пароль*</b>
+                </label>
+                <input
+                    type="password2"
+                    placeholder="Повторите пароль"
+                    id="password2"
+                    required="required">
+
+                <p>Создавая аккаунт, я соглашаюсь с
+                    <a href="#">Пользовательским соглашением</a>
+                </p>
+
+                <button type="submit" onclick="check()" class="registerbtn">Зарегистрироваться</button>
+                <div id="errorsMessage"></div>
+            </div>
+
+            <div class="container signin">
+                <p>Уже есть аккаунт?
+                    <a href="#">Войти</a>
+                </p>
+            </div>
+        </form>
+        <script src="punct2.js"></script>
+    </body>
+</html>
